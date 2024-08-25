@@ -1,0 +1,223 @@
+.banner{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background: #e7e7e7;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../img/jess-bailey-l3N9Q27zULw-unsplash.jpg);
+}
+
+.banner-upload-btn{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.banner-upload-btn img{
+    width: 20px;
+}
+
+.blog{
+    width: 70vw;
+    min-width: 400px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    padding: 50px 0;
+}
+
+textarea::-webkit-scrollbar{
+    width: 10px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.title,
+.article{
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    outline: none;
+    font-size: 50px;
+    font-weight: 600;
+    color: #2d2d2d;
+    resize: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.title::placeholder,
+.article::placeholder{
+    color: #2d2d2d;
+}
+
+.article{
+    height: 500px;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    padding-bottom: 100px;
+    white-space: pre-wrap;
+}
+
+.blog-options{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn.grey{
+    background: #a5a5a5;
+    color: #fff;
+    margin-left: 20px;
+    font-size: 14px;
+}
+.navbar{
+    width: 90%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    background: #fff;
+    z-index: 9;
+}
+.link{
+    padding: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #000;
+}
+/* Small devices (mobile phones, portrait, up to 575.98px) */
+@media (max-width: 575.98px) {
+    /* Styles for mobile phones */
+    body {
+        font-size: 14px;
+    }
+    .container {
+        padding: 10px;
+    }
+    .header, .footer {
+        text-align: center;
+    }
+    .sidebar {
+        display: none;
+    }
+    .content {
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, landscape, 576px to 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    /* Styles for tablets */
+    body {
+        font-size: 16px;
+    }
+    .container {
+        padding: 15px;
+    }
+    .header, .footer {
+        text-align: center;
+    }
+    .sidebar {
+        width: 100%;
+        order: 2; /* Sidebar appears below the content */
+    }
+    .content {
+        width: 100%;
+    }
+}
+
+/* Large devices (tablets, landscape, 768px to 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Styles for larger tablets */
+    body {
+        font-size: 18px;
+    }
+    .container {
+        padding: 20px;
+    }
+    .header, .footer {
+        text-align: left;
+    }
+    .sidebar {
+        width: 25%;
+        display: block;
+        order: 1; /* Sidebar appears next to the content */
+    }
+    .content {
+        width: 70%;
+    }
+}
+
+/* Extra large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    /* Styles for desktops */
+    body {
+        font-size: 20px;
+    }
+    .container {
+        padding: 25px;
+    }
+    .header, .footer {
+        text-align: left;
+    }
+    .sidebar {
+        width: 20%;
+    }
+    .content {
+        width: 75%;
+    }
+}
+
+/* Ultra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    /* Styles for large desktops */
+    body {
+        font-size: 22px;
+    }
+    .container {
+        padding: 30px;
+    }
+    .header, .footer {
+        text-align: left;
+    }
+    .sidebar {
+        width: 18%;
+    }
+    .content {
+        width: 78%;
+    }
+}
